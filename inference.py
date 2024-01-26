@@ -4,10 +4,10 @@ from typing import List, Optional, Dict, Any
 
 
 class ChatGPT:
-    API_TYPE = "azure"
+    API_TYPE = ""
     API_KEY = ""
-    API_BASE = "https://mlop-azure-gateway.mediatek.inc"
-    header_mtk = {
+    API_BASE = ""
+    header = {
         'X-User-Id': "",
     }
 
@@ -30,7 +30,7 @@ class ChatGPT:
         resp = openai.Embedding.create(
             engine=self.embedding_engine,
             input=text,
-            headers=self.header_mtk
+            headers=self.header
         )
         resp_embedding = resp["data"][0]["embedding"]
         return resp_embedding
@@ -65,7 +65,7 @@ class ChatGPT:
             response = openai.ChatCompletion.create(
                 engine=self.engine,
                 messages=messages,
-                headers=self.header_mtk,
+                headers=self.header,
                 temperature=self.temperature
             )
 
