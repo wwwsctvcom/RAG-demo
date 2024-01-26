@@ -73,12 +73,3 @@ class ChatGPT:
         except Exception as e:
             logger.exception(e)
         return res_content
-
-
-# if __name__ == "__main__":
-#     chatgpt = ChatGPT()
-#     res = chatgpt.chat("第81届金球奖举行，获得最佳剧情片在内的五项大奖，成为当晚的大赢家？")
-#     print(res)
-
-    # 截至我所知的信息，第81届金球奖（Golden Globe Awards）尚未举行，因此无法提供获得最佳剧情片在内的五项大奖的电影信息。金球奖通常在每年的1月举行，颁奖典礼由好莱坞外国记者协会（Hollywood Foreign Press Association, HFPA）主办，旨在表彰电影和电视业的杰出成就。
-    # 请注意，我的知识截止日期是2023年4月，如果第81届金球奖在此之后举行，我将无法提供相关信息。建议查看最新的新闻报道或官方公告以获取最新的获奖信息。
