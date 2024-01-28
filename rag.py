@@ -51,7 +51,7 @@ def test_pinecone():
 
     # 初始化pinecone，api_key可以从官网进行申请
     pinecone.init(
-        api_key='63a03bfa-8325-4b92-b506-e561d90df053',
+        api_key='',
         environment='gcp-starter'
     )
 
